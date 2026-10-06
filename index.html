@@ -30,5 +30,14 @@
   </div>
   <div class="footer">© 2026 Bad abbaz</div>
 </div>
+ <div style="text-align:center; margin-top:20px; padding:10px; background:#f0f0f0; border-radius:10px;">
+👁️ Total Views: <b id="views">...</b>
+</div>
+
+<script>
+fetch('https://api.countapi.xyz/hit/badabbaz.github.io/visits')
+.then(r=>r.json())
+.then(r=>{document.getElementById('views').innerHTML=r.value})
+</script>
 </body>
 </html>
